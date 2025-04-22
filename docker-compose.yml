@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  meu-app:
+    image: tavos/meu-app:latest
+    container_name: meu-app-container
+    ports:
+      - "8080:80"              # Porta 8080 no host → 80 no container
+    volumes:
+      - dados-app:/dados       # Volume persistente montado em /dados no container
+
+volumes:
+  dados-app:                   # Declaração do volume

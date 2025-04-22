@@ -1,0 +1,5 @@
+//Ignora o node_modules pois o docker ja tem, o dockerfile e o .gitignore
+node_modules
+
+dockerfile
+.gitignore
